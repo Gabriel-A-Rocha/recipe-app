@@ -1,20 +1,21 @@
 <div class="row">
-    <div class="col-xs-12">
-        <button class="btn btn-success">New Recipe</button>
-    </div>
+  <div class="col-xs-12">
+    <button class="btn btn-success">New Recipe</button>
+  </div>
 </div>
 <div class="row">
-    <div class="col-xs-12">
-        <a href="#" class="list-group-item clearfix">
-            <div class="pull-left">
-                <h4 class="list-group-item-heading">Recipe Name</h4>
-                <p class="list-group-item-text">Description</p>
-            </div>
-            <span class="pull-right">
-                <img class="image-responsive" src="https://cdn.pixabay.com/photo/2019/07/06/09/06/pizza-4320003_960_720.jpg" alt="" style="max-height: 50px;">
-            </span>
-        </a>
-        <!-- <app-recipe-item></app-recipe-item> -->
-    </div>
+  <div class="col-xs-12">
+    <a class="list-group-item clearfix" href="#" *ngFor="let recipe of recipes">
+      <div class="pull-left">
+        <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+        <p class="list-group-item-text">{{ recipe.description }}</p>
+      </div>
+      <span class="pull-right">
+        <img class="image-responsive" [src]="recipe.imagePath" style="max-height: 100px"/>
+      </span>
+    </a>
+    <!-- <app-recipe-item></app-recipe-item> -->
+  </div>
 </div>
+
 

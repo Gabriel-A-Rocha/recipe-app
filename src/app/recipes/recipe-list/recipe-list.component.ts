@@ -13,6 +13,11 @@ export class RecipeListComponent implements OnInit {
       'Spicy mexican pizza',
       'https://cdn.pixabay.com/photo/2019/07/06/09/06/pizza-4320003_960_720.jpg'
     ),
+    new Recipe(
+      'Brazilian barbecue',
+      'Brazilian style steak',
+      'https://cdn.pixabay.com/photo/2019/07/31/06/49/meet-4374466_960_720.jpg'
+    ),
   ];
 
   constructor() {}
