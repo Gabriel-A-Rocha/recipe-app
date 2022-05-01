@@ -8,7 +8,7 @@ export type TabOptions = 'Recipes' | 'Shopping List';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  @Output() tabClick = new EventEmitter();
+  @Output() tabClick = new EventEmitter<TabOptions>();
 
   constructor() {}
 
